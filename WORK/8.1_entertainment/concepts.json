@@ -3,101 +3,309 @@
   "topic": "Игры, фильмы и музыка: баланс пользы и развлечения",
   "author_group": "Группа Скебоб",
   "members": [
+    "Долбус Дмитрий",
+    "Хабирова Амина",
+    "Канева Юлия",
     "Хереш Артемий",
     "Фролов Матвей",
-    "Глушко Игорь",
-    "Хабирова Амина",
-    "Долбус Дмитрий",
-    "Канева Юлия"
+    "Глушко Игорь"
   ],
   "concepts": [
     {
-      "id": "8.1_entertainment/computer_game",
-      "description": "О компьютерных играх, их истории, жанрах, пользе для развития и возможных рисках для детей",
+      "id": "8.1_entertainment/history_of_games",
+      "description": "Об истории видеоигр: от первых аркад до современных онлайн-проектов и мобильных платформ.",
       "lemmas": [
-        "компьютерная игра",
+        "история видеоигр",
         "видеоигра",
-        "геймер",
         "игровая индустрия",
-        "гейминг"
+        "аркада",
+        "консоль"
       ],
-      "name": "computer_game",
-      "file": "8.1_entertainment/articles/computer_game.md",
-      "wikidata_id": "Q7889",
-      "author": "Хереш Артемий",
+      "name": "history_of_games",
+      "file": "8.1_entertainment/articles/history-of-games.md",
+      "wikidata_id": "Q941220",
+      "author": "Долбус Дмитрий",
       "article_llm": "GigaChat"
     },
     {
-      "id": "8.1_entertainment/board_game",
-      "description": "О настольных играх, их разновидностях, истории и пользе для общения и развития логического мышления",
+      "id": "8.1_entertainment/game_genres",
+      "description": "О жанрах видеоигр и о том, чем отличаются стратегии, RPG, шутеры, симуляторы и другие форматы.",
+      "lemmas": [
+        "жанр видеоигр",
+        "игровой жанр",
+        "стратегия",
+        "RPG",
+        "шутер"
+      ],
+      "name": "game_genres",
+      "file": "8.1_entertainment/articles/game-genres.md",
+      "wikidata_id": "Q659563",
+      "author": "Долбус Дмитрий",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/board_games",
+      "description": "О настольных играх, их правилах, разновидностях и пользе для мышления и общения.",
       "lemmas": [
         "настольная игра",
         "настолка",
         "шахматы",
         "карточная игра",
-        "кубик"
+        "игровое поле"
       ],
-      "name": "board_game",
-      "file": "8.1_entertainment/articles/board_game.md",
+      "name": "board_games",
+      "file": "8.1_entertainment/articles/board-games.md",
       "wikidata_id": "Q131436",
-      "author": "Хереш Артемий",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/educational_game",
-      "description": "Об образовательных играх, которые помогают учиться через развлечение и делают обучение увлекательным",
-      "lemmas": [
-        "образовательная игра",
-        "обучающая игра",
-        "развивающая игра",
-        "учёба через игру",
-        "edutainment"
-      ],
-      "name": "educational_game",
-      "file": "8.1_entertainment/articles/educational_game.md",
-      "wikidata_id": "Q1141778",
-      "author": "Хереш Артемий",
+      "author": "Долбус Дмитрий",
       "article_llm": "GigaChat"
     },
     {
       "id": "8.1_entertainment/esports",
-      "description": "О киберспорте — профессиональных соревнованиях по компьютерным играм, их истории и влиянии на молодёжь",
+      "description": "О киберспорте: как проходят турниры, какие дисциплины популярны и как тренируются игроки.",
       "lemmas": [
         "киберспорт",
-        "турнир",
-        "профессиональный геймер",
-        "стриминг",
-        "соревнование"
+        "киберспортивный турнир",
+        "командная игра",
+        "профессиональный игрок",
+        "стрим"
       ],
       "name": "esports",
       "file": "8.1_entertainment/articles/esports.md",
       "wikidata_id": "Q300920",
-      "author": "Фролов Матвей",
+      "author": "Долбус Дмитрий",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/gambling_and_harm",
+      "description": "Об азартных играх, их рисках и о том, почему важно знать о вреде игровой зависимости.",
+      "lemmas": [
+        "азартная игра",
+        "игровая зависимость",
+        "риск",
+        "ставка",
+        "лудомания"
+      ],
+      "name": "gambling_and_harm",
+      "file": "8.1_entertainment/articles/gambling-and-harm.md",
+      "wikidata_id": "Q133323",
+      "author": "Долбус Дмитрий",
       "article_llm": "GigaChat"
     },
     {
       "id": "8.1_entertainment/gamification",
-      "description": "О геймификации — использовании игровых элементов в учёбе, работе и повседневной жизни",
+      "description": "О геймификации: как игровые механики применяются в учёбе, спорте и повседневных привычках.",
       "lemmas": [
         "геймификация",
-        "игровые механики",
+        "игровая механика",
         "баллы",
-        "уровни",
-        "мотивация"
+        "уровень",
+        "достижение"
       ],
       "name": "gamification",
       "file": "8.1_entertainment/articles/gamification.md",
       "wikidata_id": "Q1145661",
+      "author": "Долбус Дмитрий",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/composer",
+      "description": "О профессии композитора: как создаётся музыка и какую роль композитор играет в культуре.",
+      "lemmas": [
+        "композитор",
+        "партитура",
+        "сочинитель",
+        "музыкальное произведение",
+        "мелодия"
+      ],
+      "name": "composer",
+      "file": "8.1_entertainment/articles/composer.md",
+      "wikidata_id": "Q36834",
+      "author": "Хабирова Амина",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/music_genres",
+      "description": "О жанрах музыки: как сформировались стили и чем отличаются классика, рок, джаз, поп и другие направления.",
+      "lemmas": [
+        "жанр музыки",
+        "музыкальный стиль",
+        "рок",
+        "джаз",
+        "поп-музыка"
+      ],
+      "name": "music_genres",
+      "file": "8.1_entertainment/articles/music_genres.md",
+      "wikidata_id": "Q188451",
+      "author": "Хабирова Амина",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/musical_instruments",
+      "description": "О музыкальных инструментах, их группах и о том, как звук рождается в разных инструментах.",
+      "lemmas": [
+        "музыкальный инструмент",
+        "струнный инструмент",
+        "духовой инструмент",
+        "ударный инструмент",
+        "оркестр"
+      ],
+      "name": "musical_instruments",
+      "file": "8.1_entertainment/articles/musical_instruments.md",
+      "wikidata_id": "Q34379",
+      "author": "Хабирова Амина",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/music",
+      "description": "О понятии музыки: из чего она состоит, как устроены ритм, мелодия и гармония.",
+      "lemmas": [
+        "музыка",
+        "мелодия",
+        "ритм",
+        "гармония",
+        "звук"
+      ],
+      "name": "music",
+      "file": "8.1_entertainment/articles/music.md",
+      "wikidata_id": "Q638",
+      "author": "Канева Юлия",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/history_of_music",
+      "description": "Об истории музыки: от древних традиций до современной мировой музыкальной культуры.",
+      "lemmas": [
+        "история музыки",
+        "древняя музыка",
+        "музыкальная эпоха",
+        "классическая эпоха",
+        "современная музыка"
+      ],
+      "name": "history_of_music",
+      "file": "8.1_entertainment/articles/history_of_music.md",
+      "wikidata_id": "Q188451",
+      "author": "Канева Юлия",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/psychology_of_music",
+      "description": "О влиянии музыки на человека: эмоции, внимание, память, настроение и самочувствие.",
+      "lemmas": [
+        "психология музыки",
+        "влияние музыки",
+        "эмоции",
+        "настроение",
+        "музыкотерапия"
+      ],
+      "name": "psychology_of_music",
+      "file": "8.1_entertainment/articles/psychology_of_music.md",
+      "wikidata_id": "Q886424",
+      "author": "Канева Юлия",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/director",
+      "description": "О режиссёре: кто это, какие решения принимает и как объединяет работу всей съёмочной команды.",
+      "lemmas": [
+        "режиссёр",
+        "постановка",
+        "съёмочный процесс",
+        "кадр",
+        "киносъёмка"
+      ],
+      "name": "director",
+      "file": "8.1_entertainment/articles/director.md",
+      "wikidata_id": "P57",
+      "author": "Хереш Артемий",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/script",
+      "description": "О сценарии: как строится история фильма, зачем нужен сценарный план и кто его пишет.",
+      "lemmas": [
+        "сценарий",
+        "сценарист",
+        "сюжет",
+        "диалог",
+        "сцена"
+      ],
+      "name": "script",
+      "file": "8.1_entertainment/articles/script.md",
+      "wikidata_id": "Q103076",
+      "author": "Хереш Артемий",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/soundtrack",
+      "description": "О саундтреке: как музыка помогает раскрывать сюжет и усиливать впечатления от фильма.",
+      "lemmas": [
+        "саундтрек",
+        "музыка к фильму",
+        "тема фильма",
+        "композитор",
+        "звуковая дорожка"
+      ],
+      "name": "soundtrack",
+      "file": "8.1_entertainment/articles/soundtrack.md",
+      "wikidata_id": "Q217199",
+      "author": "Хереш Артемий",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/movie",
+      "description": "О фильмах: как создаётся кино, какие бывают жанры и почему фильмы так важны в культуре.",
+      "lemmas": [
+        "фильм",
+        "кино",
+        "кинокартина",
+        "жанр",
+        "киноискусство"
+      ],
+      "name": "movie",
+      "file": "8.1_entertainment/articles/movie.md",
+      "wikidata_id": "Q11424",
+      "author": "Фролов Матвей",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/special_effects",
+      "description": "О спецэффектах: какие бывают виды эффектов и как они помогают создавать визуальные чудеса в кино.",
+      "lemmas": [
+        "спецэффекты",
+        "визуальные эффекты",
+        "CGI",
+        "хромакей",
+        "грим"
+      ],
+      "name": "special_effects",
+      "file": "8.1_entertainment/articles/special_effects.md",
+      "wikidata_id": "Q8317",
+      "author": "Фролов Матвей",
+      "article_llm": "GigaChat"
+    },
+    {
+      "id": "8.1_entertainment/montage",
+      "description": "О монтаже в кино: как из отдельных кадров собирают цельную и выразительную историю.",
+      "lemmas": [
+        "монтаж",
+        "киномонтаж",
+        "монтажный план",
+        "кадр",
+        "склейка"
+      ],
+      "name": "montage",
+      "file": "8.1_entertainment/articles/montage.md",
+      "wikidata_id": "Q237893",
       "author": "Фролов Матвей",
       "article_llm": "GigaChat"
     },
     {
       "id": "8.1_entertainment/animation",
-      "description": "О мультфильмах — анимационном искусстве, его техниках, истории и любимых мультфильмах мира",
+      "description": "О мультфильмах и анимации: как оживают рисунки и 3D-модели, и почему анимация важна для культуры.",
       "lemmas": [
         "мультфильм",
         "анимация",
-        "мультик",
+        "мультипликация",
         "аниме",
         "рисованный фильм"
       ],
@@ -109,13 +317,13 @@
     },
     {
       "id": "8.1_entertainment/documentary",
-      "description": "О документальных фильмах — кино, которое рассказывает о реальных событиях, природе и людях",
+      "description": "О документальном кино: как фильмы о реальных событиях помогают узнавать мир и думать критически.",
       "lemmas": [
         "документальный фильм",
-        "документалка",
+        "документалистика",
         "репортаж",
-        "научное кино",
-        "нон-фикшн"
+        "реальные события",
+        "документальное кино"
       ],
       "name": "documentary",
       "file": "8.1_entertainment/articles/documentary.md",
@@ -124,256 +332,20 @@
       "article_llm": "GigaChat"
     },
     {
-      "id": "8.1_entertainment/cinema",
-      "description": "О кинематографе — истории появления и развития кино как вида искусства и технологии",
-      "lemmas": [
-        "кинематограф",
-        "киноискусство",
-        "кинопроизводство",
-        "история кино",
-        "киноплёнка"
-      ],
-      "name": "cinema",
-      "file": "8.1_entertainment/articles/cinema.md",
-      "wikidata_id": "Q5398426",
-      "author": "Хабирова Амина",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/music",
-      "description": "О музыке — искусстве звуков, истории музыки, её жанрах и влиянии на человека",
-      "lemmas": [
-        "музыка",
-        "мелодия",
-        "звук",
-        "ритм",
-        "нота"
-      ],
-      "name": "music",
-      "file": "8.1_entertainment/articles/music.md",
-      "wikidata_id": "Q638",
-      "author": "Долбус Дмитрий",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/musical_instrument",
-      "description": "О музыкальных инструментах — их видах, истории создания и роли в оркестре и повседневной жизни",
-      "lemmas": [
-        "музыкальный инструмент",
-        "гитара",
-        "пианино",
-        "барабан",
-        "оркестр"
-      ],
-      "name": "musical_instrument",
-      "file": "8.1_entertainment/articles/musical_instrument.md",
-      "wikidata_id": "Q34379",
-      "author": "Долбус Дмитрий",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/musical_genre",
-      "description": "О музыкальных жанрах — от классики до хип-хопа, как появились разные стили музыки",
-      "lemmas": [
-        "музыкальный жанр",
-        "рок",
-        "поп",
-        "хип-хоп",
-        "стиль музыки"
-      ],
-      "name": "musical_genre",
-      "file": "8.1_entertainment/articles/musical_genre.md",
-      "wikidata_id": "Q188451",
-      "author": "Долбус Дмитрий",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/classical_music",
-      "description": "О классической музыке — великих композиторах, знаменитых произведениях и влиянии на мировую культуру",
-      "lemmas": [
-        "классическая музыка",
-        "симфония",
-        "опера",
-        "Бетховен",
-        "Моцарт"
-      ],
-      "name": "classical_music",
-      "file": "8.1_entertainment/articles/classical_music.md",
-      "wikidata_id": "Q9730",
-      "author": "Долбус Дмитрий",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/song",
-      "description": "О песнях — искусстве сочетания музыки и слов, истории песенного жанра и знаменитых хитах",
-      "lemmas": [
-        "песня",
-        "текст песни",
-        "припев",
-        "куплет",
-        "хит"
-      ],
-      "name": "song",
-      "file": "8.1_entertainment/articles/song.md",
-      "wikidata_id": "Q7366",
-      "author": "Долбус Дмитрий",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/entertainment",
-      "description": "О развлечениях — их видах, роли в жизни человека и правильном балансе между отдыхом и делами",
-      "lemmas": [
-        "развлечение",
-        "отдых",
-        "досуг",
-        "хобби",
-        "свободное время"
-      ],
-      "name": "entertainment",
-      "file": "8.1_entertainment/articles/entertainment.md",
-      "wikidata_id": "Q173799",
-      "author": "Фролов Матвей",
-      "article_llm": "GigaChat"
-    },
-    {
       "id": "8.1_entertainment/media_literacy",
-      "description": "О медиаграмотности — умении критически оценивать информацию из интернета, ТВ и социальных сетей",
+      "description": "О медиаграмотности: как проверять информацию, отличать факты от фейков и безопасно пользоваться медиа.",
       "lemmas": [
         "медиаграмотность",
-        "критическое мышление",
         "фейк",
+        "критическое мышление",
         "информационная безопасность",
-        "интернет"
+        "проверка фактов"
       ],
       "name": "media_literacy",
       "file": "8.1_entertainment/articles/media_literacy.md",
       "wikidata_id": "Q1004817",
-      "author": "Хабирова Амина",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/movie_theater",
-      "description": "О кинотеатрах — истории кинозалов, технологиях показа фильмов и волшебной атмосфере большого экрана",
-      "lemmas": [
-        "кинотеатр",
-        "кинозал",
-        "большой экран",
-        "попкорн",
-        "сеанс"
-      ],
-      "name": "movie_theater",
-      "file": "8.1_entertainment/articles/movie_theater.md",
-      "wikidata_id": "Q41253",
-      "author": "Канева Юлия",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/composer",
-      "description": "О композиторах — людях, которые создают музыку, великих мастерах прошлого и современности",
-      "lemmas": [
-        "композитор",
-        "автор музыки",
-        "дирижёр",
-        "партитура",
-        "сочинитель"
-      ],
-      "name": "composer",
-      "file": "8.1_entertainment/articles/composer.md",
-      "wikidata_id": "Q36834",
-      "author": "Канева Юлия",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/movie",
-      "description": "Статья рассказывает о понятии фильма.",
-      "lemmas": [
-        "фильм",
-        "жанр",
-        "фантастика",
-        "приключения",
-        "фэнтези",
-        "драма",
-        "комедия",
-        "ужасы",
-        "триллер"
-      ],
-      "name": "Фильм",
-      "file": "8.1_entertainment/articles/movie.md",
-      "wikidata_id": "Q11424",
-      "author": "Ecodrin",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/montage",
-      "description": "О монтаже, его видах",
-      "lemmas": [
-        "монтаж",
-        "киномонтаж",
-        "кадр"
-      ],
-      "name": "Монтаж в кино",
-      "file": "8.1_entertainment/articles/montage.md",
-      "wikidata_id": "Q237893",
-      "author": "Ecodrin",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/special_effects",
-      "description": "О спецэффектах в кино, их видах и истории появления.",
-      "lemmas": [
-        "спецэффект",
-        "CGI",
-        "stop-motion",
-        "хромакей",
-        "декорации"
-      ],
-      "name": "Спецэффекты в кино",
-      "file": "8.1_entertainment/articles/special_effects.md",
-      "wikidata_id": "Q8317",
-      "author": "Ecodrin",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/script",
-      "description": "Что такой сценарий. Кто его делает и зачем он.",
-      "lemmas": [
-        "сценарий",
-        "сценарист",
-        "эпизод",
-        "раскадровка"
-      ],
-      "name": "Сценарий",
-      "file": "8.1_entertainment/articles/script.md",
-      "wikidata_id": "Q103076",
-      "author": "anxiousss",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/director",
-      "description": "О роли режиссёра в создании фильма, его задачах и творческом видении.",
-      "lemmas": [
-        "режиссёр",
-        "постановка"
-      ],
-      "name": "Режиссёр",
-      "file": "8.1_entertainment/articles/director.md",
-      "wikidata_id": "P57",
-      "author": "anxiousss",
-      "article_llm": "GigaChat"
-    },
-    {
-      "id": "8.1_entertainment/soundtrack",
-      "description": "О саундтреках в кино, их роли, создании и известных композиторах.",
-      "lemmas": [
-        "саундтрек"
-      ],
-      "name": "Саундтрек",
-      "file": "8.1_entertainment/articles/soundtrack.md",
-      "wikidata_id": "Q217199",
-      "author": "anxiousss",
+      "author": "Глушко Игорь",
       "article_llm": "GigaChat"
     }
   ]
 }
-
-

@@ -10,58 +10,53 @@
 
 ```mermaid
 graph TD
-    ENT["🎭 Развлечение<br/>(Q173799)"]
+    ENT["🎭 Развлечения"]
 
-    ENT -->|включает| GAMES["🎮 Компьютерная игра<br/>(Q7889)"]
-    ENT -->|включает| FILMS["🎬 Фильм<br/>(Q11424)"]
-    ENT -->|включает| MUSIC["🎵 Музыка<br/>(Q638)"]
-    ENT -.->|требует| ML["📚 Медиаграмотность<br/>(Q1004817)"]
+    ENT --> GAMES["🎮 Видеоигры"]
+    ENT --> FILMS["🎬 Кино"]
+    ENT --> MUSIC["🎵 Музыка"]
 
     %% Игры
-    GAMES -->|подвид| BG["🎲 Настольная игра<br/>(Q131436)"]
-    GAMES -->|подвид| EG["📖 Образовательная игра<br/>(Q1141778)"]
-    GAMES -->|развитие| ES["🏆 Киберспорт<br/>(Q300920)"]
-    GAMES -.->|применяет принципы| GM["🔄 Геймификация<br/>(Q1145661)"]
-    GM -.->|используется в| EG
-
-    %% Фильмы
-    FILMS -->|подвид| AN["🎞️ Мультфильм<br/>(Q202866)"]
-    FILMS -->|подвид| DOC["📹 Документальный фильм<br/>(Q93204)"]
-    FILMS -.->|часть| CIN["🎥 Кинематограф<br/>(Q5398426)"]
-    DOC -.->|развивает| ML
+    GAMES --> HOG["История видеоигр<br/>(Q941220)"]
+    GAMES --> GGEN["Жанры видеоигр<br/>(Q659563)"]
+    GAMES --> BG["Настольные игры<br/>(Q131436)"]
+    GAMES --> ES["Киберспорт<br/>(Q300920)"]
+    GAMES --> GAMB["Азартные игры и вред<br/>(Q133323)"]
+    GAMES --> GM["Геймификация<br/>(Q1145661)"]
 
     %% Музыка
-    MUSIC -->|играют на| MI["🎸 Музыкальный инструмент<br/>(Q34379)"]
-    MUSIC -->|делится на| MG["🎼 Музыкальный жанр<br/>(Q188451)"]
-    MUSIC -->|подвид| CM["🎻 Классическая музыка<br/>(Q9730)"]
-    MUSIC -->|форма| SONG["🎤 Песня<br/>(Q7366)"]
-    MUSIC -->|создаёт| COMP["🎹 Композитор<br/>(Q36834)"]
-    CM -->|является| MG
-    SONG -.->|звучит в| FILMS
-    COMP -->|пишет| SONG
-    COMP -->|пишет| ST["🎧 Саундтрек<br/>(Q217199)"]
-    ST -.->|звучит в| FILMS
-    ST -.->|звучит в| GAMES
+    MUSIC --> MUS["Понятие музыки<br/>(Q638)"]
+    MUSIC --> HM["История музыки<br/>(Q188451)"]
+    MUSIC --> PM["Влияние музыки<br/>(Q886424)"]
+    MUSIC --> COMP["Композитор<br/>(Q36834)"]
+    MUSIC --> MGEN["Жанры музыки<br/>(Q188451)"]
+    MUSIC --> MINST["Музыкальные инструменты<br/>(Q34379)"]
 
-    %% Фильмы — кинотеатр
-    CIN -->|показывает в| MT["🏛️ Кинотеатр<br/>(Q41253)"]
+    %% Кино
+    FILMS --> MOV["Фильм<br/>(Q11424)"]
+    FILMS --> DIR["Режиссёр<br/>(P57)"]
+    FILMS --> SCR["Сценарий<br/>(Q103076)"]
+    FILMS --> ST["Саундтрек<br/>(Q217199)"]
+    FILMS --> MONT["Монтаж<br/>(Q237893)"]
+    FILMS --> SFX["Спецэффекты<br/>(Q8317)"]
+    FILMS --> AN["Мультфильм<br/>(Q202866)"]
+    FILMS --> DOC["Документальный фильм<br/>(Q93204)"]
 
-    %% Новые понятия (из main)
-    FILMS -->|создаётся по| SCR["📝 Сценарий<br/>(Q103076)"]
-    FILMS -->|руководит| DIR["🎬 Режиссёр<br/>(P57)"]
-    FILMS -->|использует| MONT["✂️ Монтаж<br/>(Q237893)"]
-    FILMS -->|использует| SFX["💥 Спецэффекты<br/>(Q8317)"]
-    AN -->|использует| SFX
-    DIR -->|работает с| MONT
-    SCR -.->|основа для| DIR
+    %% Медиаграмотность
+    ML["📚 Медиаграмотность<br/>(Q1004817)"]
+    DOC -.->|развивает| ML
+    AN -.->|развивает| ML
 
     %% Горизонтальные связи
-    GAMES -.->|саундтрек| MUSIC
-    FILMS -.->|экранизация игры| GAMES
-    ES -.->|транслируется как| FILMS
-    ML -.->|помогает оценить| GAMES
-    ML -.->|помогает оценить| FILMS
-    ML -.->|помогает оценить| MUSIC
+    ST -.->|звучит в| MOV
+    ST -.->|звучит в| GAMES
+    DIR -.->|снимает| MOV
+    SCR -.->|основа для| MOV
+    MONT -.->|часть производства| MOV
+    SFX -.->|используется в| MOV
+    PM -.->|влияние на| GAMES
+    PM -.->|влияние на| FILMS
+    GM -.->|применяется в| EDUC["Обучение"]
 
     %% Стили
     classDef games fill:#e8f5e9,stroke:#388e3c
@@ -69,11 +64,10 @@ graph TD
     classDef music fill:#fce4ec,stroke:#c62828
     classDef general fill:#fff9c4,stroke:#f9a825
 
-    class GAMES,BG,EG,ES,GM games
-    class FILMS,AN,DOC,CIN,MT films
-    class MUSIC,MI,MG,CM,SONG,COMP,ST music
-    class ENT,ML general
-    class SCR,DIR,MONT,SFX films
+    class GAMES,HOG,GGEN,BG,ES,GAMB,GM games
+    class FILMS,MOV,AN,DOC,DIR,SCR,ST,MONT,SFX films
+    class MUSIC,MUS,HM,PM,COMP,MGEN,MINST music
+    class ENT,ML,EDUC general
 ```
 
 ### Описание связей
@@ -88,29 +82,27 @@ graph TD
 
 | # | Понятие | WikiData | Категория | Файл |
 |---|---------|----------|-----------|------|
-| 1 | Компьютерная игра | [Q7889](https://www.wikidata.org/wiki/Q7889) | Игры | `articles/computer_game.md` |
-| 2 | Настольная игра | [Q131436](https://www.wikidata.org/wiki/Q131436) | Игры | `articles/board_game.md` |
-| 3 | Образовательная игра | [Q1141778](https://www.wikidata.org/wiki/Q1141778) | Игры | `articles/educational_game.md` |
+| 1 | История видеоигр | [Q941220](https://www.wikidata.org/wiki/Q941220) | Игры | `articles/history-of-games.md` |
+| 2 | Жанры видеоигр | [Q659563](https://www.wikidata.org/wiki/Q659563) | Игры | `articles/game-genres.md` |
+| 3 | Настольные игры | [Q131436](https://www.wikidata.org/wiki/Q131436) | Игры | `articles/board-games.md` |
 | 4 | Киберспорт | [Q300920](https://www.wikidata.org/wiki/Q300920) | Игры | `articles/esports.md` |
-| 5 | Геймификация | [Q1145661](https://www.wikidata.org/wiki/Q1145661) | Игры | `articles/gamification.md` |
-| 6 | Фильм | [Q11424](https://www.wikidata.org/wiki/Q11424) | Фильмы | `articles/movie.md` |
-| 7 | Мультфильм | [Q202866](https://www.wikidata.org/wiki/Q202866) | Фильмы | `articles/animation.md` |
-| 8 | Документальный фильм | [Q93204](https://www.wikidata.org/wiki/Q93204) | Фильмы | `articles/documentary.md` |
-| 9 | Кинематограф | [Q5398426](https://www.wikidata.org/wiki/Q5398426) | Фильмы | `articles/cinema.md` |
-| 10 | Музыка | [Q638](https://www.wikidata.org/wiki/Q638) | Музыка | `articles/music.md` |
-| 11 | Музыкальный инструмент | [Q34379](https://www.wikidata.org/wiki/Q34379) | Музыка | `articles/musical_instrument.md` |
-| 12 | Музыкальный жанр | [Q188451](https://www.wikidata.org/wiki/Q188451) | Музыка | `articles/musical_genre.md` |
-| 13 | Классическая музыка | [Q9730](https://www.wikidata.org/wiki/Q9730) | Музыка | `articles/classical_music.md` |
-| 14 | Песня | [Q7366](https://www.wikidata.org/wiki/Q7366) | Музыка | `articles/song.md` |
-| 15 | Развлечение | [Q173799](https://www.wikidata.org/wiki/Q173799) | Общее | `articles/entertainment.md` |
-| 16 | Медиаграмотность | [Q1004817](https://www.wikidata.org/wiki/Q1004817) | Общее | `articles/media_literacy.md` |
-| 17 | Кинотеатр | [Q41253](https://www.wikidata.org/wiki/Q41253) | Фильмы | `articles/movie_theater.md` |
-| 18 | Композитор | [Q36834](https://www.wikidata.org/wiki/Q36834) | Музыка | `articles/composer.md` |
-| 19 | Саундтрек | [Q217199](https://www.wikidata.org/wiki/Q217199) | Музыка | `articles/soundtrack.md` |
-| 20 | Монтаж в кино | [Q237893](https://www.wikidata.org/wiki/Q237893) | Фильмы | `articles/montage.md` |
-| 21 | Спецэффекты в кино | [Q8317](https://www.wikidata.org/wiki/Q8317) | Фильмы | `articles/special_effects.md` |
-| 22 | Сценарий | [Q103076](https://www.wikidata.org/wiki/Q103076) | Фильмы | `articles/script.md` |
-| 23 | Режиссёр | [P57](https://www.wikidata.org/wiki/Property:P57) | Фильмы | `articles/director.md` |
+| 5 | Азартные игры и их вред | [Q133323](https://www.wikidata.org/wiki/Q133323) | Игры | `articles/gambling-and-harm.md` |
+| 6 | Геймификация | [Q1145661](https://www.wikidata.org/wiki/Q1145661) | Игры | `articles/gamification.md` |
+| 7 | Композитор | [Q36834](https://www.wikidata.org/wiki/Q36834) | Музыка | `articles/composer.md` |
+| 8 | Жанры музыки | [Q188451](https://www.wikidata.org/wiki/Q188451) | Музыка | `articles/music_genres.md` |
+| 9 | Музыкальные инструменты | [Q34379](https://www.wikidata.org/wiki/Q34379) | Музыка | `articles/musical_instruments.md` |
+| 10 | Понятие музыки и её устройство | [Q638](https://www.wikidata.org/wiki/Q638) | Музыка | `articles/music.md` |
+| 11 | История музыки | [Q188451](https://www.wikidata.org/wiki/Q188451) | Музыка | `articles/history_of_music.md` |
+| 12 | Влияние музыки на человека | [Q886424](https://www.wikidata.org/wiki/Q886424) | Музыка | `articles/psychology_of_music.md` |
+| 13 | Режиссёр | [P57](https://www.wikidata.org/wiki/Property:P57) | Фильмы | `articles/director.md` |
+| 14 | Сценарий | [Q103076](https://www.wikidata.org/wiki/Q103076) | Фильмы | `articles/script.md` |
+| 15 | Саундтрек | [Q217199](https://www.wikidata.org/wiki/Q217199) | Фильмы | `articles/soundtrack.md` |
+| 16 | Фильм | [Q11424](https://www.wikidata.org/wiki/Q11424) | Фильмы | `articles/movie.md` |
+| 17 | Спецэффекты | [Q8317](https://www.wikidata.org/wiki/Q8317) | Фильмы | `articles/special_effects.md` |
+| 18 | Монтаж | [Q237893](https://www.wikidata.org/wiki/Q237893) | Фильмы | `articles/montage.md` |
+| 19 | Мультфильм | [Q202866](https://www.wikidata.org/wiki/Q202866) | Фильмы | `articles/animation.md` |
+| 20 | Документальный фильм | [Q93204](https://www.wikidata.org/wiki/Q93204) | Фильмы | `articles/documentary.md` |
+| 21 | Медиаграмотность | [Q1004817](https://www.wikidata.org/wiki/Q1004817) | Общее | `articles/media_literacy.md` |
 
 ## Источники знаний
 
@@ -171,9 +163,9 @@ python crosslink.py
 
 | # | ФИО | Понятия |
 |---|-----|---------|
-| 1 | Хереш Артемий | Компьютерная игра, Настольная игра, Образовательная игра, Сценарий, Режиссёр, Саундтрек |
-| 2 | Фролов Матвей | Киберспорт, Геймификация, Развлечение, Монтаж, Спецэффекты (практические) |
-| 3 | Глушко Игорь | Фильм, Мультфильм, Документальный фильм |
-| 4 | Хабирова Амина | Кинематограф, Спецэффекты (VFX), Медиаграмотность |
-| 5 | Долбус Дмитрий | Музыка, Музыкальный инструмент, Музыкальный жанр, Классическая музыка, Песня |
-| 6 | Канева Юлия | Кинотеатр, Композитор, Саундтрек |
+| 1 | Долбус Дмитрий | История видеоигр, Жанры видеоигр, Настольные игры, Киберспорт, Азартные игры и их вред, Геймификация |
+| 2 | Хабирова Амина | Композитор, Жанры музыки, Музыкальные инструменты |
+| 3 | Канева Юлия | Понятие музыки и её устройство, История музыки, Влияние музыки на человека |
+| 4 | Хереш Артемий | Режиссёр, Сценарий, Саундтрек |
+| 5 | Фролов Матвей | Фильм, Спецэффекты, Монтаж |
+| 6 | Глушко Игорь | Мультфильм, Документальный фильм, Медиаграмотность |
