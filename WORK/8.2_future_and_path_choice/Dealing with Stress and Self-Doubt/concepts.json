@@ -1,0 +1,23 @@
+[
+  {
+    "id": "WEB/8.2_future_and_path_choice/01_stress_effect.md",
+    "name": "Стресс",
+    "description": "Что такое стресс и как он влияет на психику",
+    "lemmas": ["стресс", "эмоции", "выбор пути"],
+    "file": "WEB/8.2_future_and_path_choice/01_stress_effect.md"
+  },
+  {
+    "id": "WEB/8.2_future_and_path_choice/02_insecurity_causes.md",
+    "name": "Неуверенность",
+    "description": "Причины сомнений и неуверенности при выборе пути",
+    "lemmas": ["неуверенность", "сомнения", "страх ошибок"],
+    "file": "WEB/8.2_future_and_path_choice/02_insecurity_causes.md"
+  },
+  {
+    "id": "WEB/8.2_future_and_path_choice/03_stress_management.md",
+    "name": "Методы управления стрессом",
+    "description": "Техники снижения стресса и повышения уверенности",
+    "lemmas": ["стресс", "управление", "техники"],
+    "file": "WEB/8.2_future_and_path_choice/03_stress_management.md"
+  }
+]
