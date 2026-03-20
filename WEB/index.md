@@ -54,24 +54,6 @@
 
 ---
 
-## 🗺️ Связи между статьями
-
-Все статьи в разделе связаны друг с другом. Вот основные маршруты для чтения:
-
-### 📍 Маршрут 1: «Я постоянно откладываю дела»
-Начни с [Прокрастинация и её связь со стрессом](articles/procrastination_stress.md) → затем [Когнитивные искажения и самокритика](articles/cognitive_distortions.md) → [Постановка целей и снижение тревожности](articles/goal_setting_anxiety.md)
-
-### 📍 Маршрут 2: «Я всё время тревожусь»
-Начни с [Психология страха и тревожности](articles/fear_anxiety_psychology.md) → [Влияние стресса на здоровье](articles/stress_health_impact.md) → [Методы управления стрессом](articles/stress_management_methods.md)
-
-### 📍 Маршрут 3: «Я не верю в себя»
-Начни с [Причины неуверенности и сомнений](articles/insecurity_causes.md) → [Развитие уверенности в себе](articles/self_confidence_development.md) → [Поддержка и помощь со стороны окружающих](articles/social_support.md)
-
-### 📍 Маршрут 4: «Я хочу стать сильнее»
-Начни с [Формирование устойчивости к стрессу](articles/stress_resilience.md) → [Техники релаксации и восстановления](articles/relaxation_techniques.md) → [Роль эмоций в принятии решений](articles/emotions_in_decisions.md)
-
----
-
 ## 🧠 Ключевые понятия раздела
 
 | Понятие | Что это |
