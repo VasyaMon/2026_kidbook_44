@@ -91,7 +91,7 @@
 
 - [WikiData](https://www.wikidata.org/) — база знаний, использованная для поиска связей
 - [DBpedia](https://wiki.dbpedia.org/) — ещё одна открытая база знаний
-- [Вернуться к оглавлению](../../README.md)
+- [Вернуться к оглавлению](https://github.com/VasyaMon/2026_kidbook_44/blob/main/WEB/index.md)
 
 ---
 
